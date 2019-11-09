@@ -1,0 +1,12 @@
+# build image
+docker build -t ifchicken/simpleweb .
+
+# run container
+# local network port: container port
+docker run -p 8080:8080 ifchicken/simpleweb
+
+# check exe container
+docker ps
+
+# exec shell in container
+docker exec -it [ID] sh
